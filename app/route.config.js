@@ -13,11 +13,18 @@ function RouteConfig($stateProvider, $urlRouterProvider)
 		  controller  : require('./controllers/HomeCtrl'),
 	   })
 	 
-		//rota sobre
-	   .state('sobre', {
-		  url:'/sobre',
-		  templateUrl : 'app/views/sobre.html',
-		  controller  : require('./controllers/SobreCtrl'),
+		//rota equipe
+	   .state('equipe', {
+		  url:'/equipe',
+		  templateUrl : 'app/views/equipe.html',
+		  controller  : require('./controllers/EquipeCtrl'),
+	   })
+
+	   //rota projeto
+	   .state('projeto', {
+		  url:'/projeto',
+		  templateUrl : 'app/views/projeto.html',
+		  controller  : require('./controllers/ProjetoCtrl'),
 	   })	 	   
 	 
 	}
