@@ -25,6 +25,13 @@ function RouteConfig($stateProvider, $urlRouterProvider)
 		  url:'/projeto',
 		  templateUrl : 'app/views/projeto.html',
 		  controller  : require('./controllers/ProjetoCtrl'),
+	   })
+
+	   //rota desenvolvimento
+	   .state('desenvolvimento', {
+		  url:'/desenvolvimento',
+		  templateUrl : 'app/views/desenvolvimento.html',
+		  controller  : require('./controllers/DesenvolvimentoCtrl'),
 	   })	 	   
 	 
 	}
